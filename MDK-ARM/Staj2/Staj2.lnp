@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"staj2\startup_stm32f103xb.o"
+"staj2\main.o"
+"staj2\stm32f1xx_it.o"
+"staj2\stm32f1xx_hal_msp.o"
+"staj2\stm32f1xx_hal_gpio_ex.o"
+"staj2\stm32f1xx_hal_tim.o"
+"staj2\stm32f1xx_hal_tim_ex.o"
+"staj2\stm32f1xx_hal_uart.o"
+"staj2\stm32f1xx_hal.o"
+"staj2\stm32f1xx_hal_rcc.o"
+"staj2\stm32f1xx_hal_rcc_ex.o"
+"staj2\stm32f1xx_hal_gpio.o"
+"staj2\stm32f1xx_hal_dma.o"
+"staj2\stm32f1xx_hal_cortex.o"
+"staj2\stm32f1xx_hal_pwr.o"
+"staj2\stm32f1xx_hal_flash.o"
+"staj2\stm32f1xx_hal_flash_ex.o"
+"staj2\stm32f1xx_hal_exti.o"
+"staj2\system_stm32f1xx.o"
+--strict --scatter "Staj2\Staj2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Staj2.map" -o Staj2\Staj2.axf
